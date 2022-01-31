@@ -1,0 +1,114 @@
+nav a, .login, .signup {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+body {
+  background-color: white;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 80px;
+  width: 1143px;
+}
+
+nav {
+  margin-left: 59px;
+  width: 698px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-part-first {
+  width: 183px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-part-second {
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav a {
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration: none;
+}
+
+nav a:link {
+  color: #999999;
+}
+
+nav a:visited {
+  color: #999999;
+}
+
+nav a:hover {
+  color: #776fab;
+  cursor: pointer;
+}
+
+nav a:active {
+  color: #2E1AAD;
+}
+
+.login {
+  width: 100px;
+  height: 40px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #2E1AAD;
+  color: #2E1AAD;
+  text-align: center;
+  -webkit-font-feature-settings: 'liga' off;
+          font-feature-settings: 'liga' off;
+}
+
+.signup {
+  width: 100px;
+  height: 40px;
+  background: #2E1AAD;
+  border-radius: 8px;
+  border: 1px solid #2E1AAD;
+  color: white;
+  text-align: center;
+  -webkit-font-feature-settings: 'liga' off;
+          font-feature-settings: 'liga' off;
+}
+
+.authorization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 48px;
+  width: 214px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */
