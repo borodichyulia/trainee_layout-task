@@ -1,4 +1,4 @@
-nav a, .login, .signup {
+nav a, .login, .signup, .button-search > input {
   font-family: Manrope;
   font-style: normal;
   font-weight: bold;
@@ -89,6 +89,10 @@ nav a:active {
           font-feature-settings: 'liga' off;
 }
 
+.login:hover {
+  cursor: pointer;
+}
+
 .signup {
   width: 100px;
   height: 40px;
@@ -101,6 +105,10 @@ nav a:active {
           font-feature-settings: 'liga' off;
 }
 
+.signup:hover {
+  cursor: pointer;
+}
+
 .authorization {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,5 +118,145 @@ nav a:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.part-1 {
+  background-color: #F5F7FA;
+}
+
+.part-1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 763px;
+  width: 1143px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.first-screen {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 436px;
+  padding-top: 71px;
+  padding-bottom: 48px;
+}
+
+.first-screen-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+}
+
+.subtitle {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #999999;
+  margin-top: 28px;
+}
+
+.search-job {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 96px;
+  background-color: white;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.1);
+          box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.1);
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 22px 32px;
+}
+
+.job-title > input {
+  border: 1px solid #DDDDDD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  width: 331px;
+  height: 52px;
+  color: #999999;
+  padding: 15px 16px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.job-place > input {
+  border: 1px solid #DDDDDD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  width: 291px;
+  height: 52px;
+  color: #999999;
+  padding: 15px 16px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.job-distance > select {
+  border: 1px solid #DDDDDD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  width: 237px;
+  height: 52px;
+  color: #999999;
+  padding: 15px 16px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.button-search > input {
+  border: 1px solid #DDDDDD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  width: 115px;
+  height: 52px;
+  color: #999999;
+  padding: 15px 16px;
+  background-color: #2E1AAD;
+  color: white;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

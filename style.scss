@@ -14,6 +14,35 @@ $color: white;
     color: $color;
     text-align: center;
     font-feature-settings: 'liga' off;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@mixin container($height){
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: $height;
+    width: 1143px;
+}
+
+@mixin font($weight, $size){
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin input-search($width){
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: $width;
+    height: 52px;
+    color: #999999;
+    padding: 15px 16px;
 }
 
 %font-header{
@@ -29,11 +58,7 @@ body{
 }
 
 header .container{
-    display: flex;
-    align-items: center;
-    margin: auto;
-    height: 80px;
-    width: 1143px;
+    @include container(80px);
 }
 
 nav{
@@ -93,4 +118,70 @@ nav a{
     margin-left: 48px;
     width: 214px;
     justify-content: space-between;
+}
+
+.part-1{
+    background-color: #F5F7FA;
+}
+
+.part-1 .container{
+    @include container(763px);
+    flex-direction: column;
+}
+
+.first-screen{  
+    @include nav-parts-header(inherit);
+    height: 436px;
+    padding-top: 71px;
+    padding-bottom: 48px;
+}
+
+.first-screen-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    @include font(800, 48px);
+}
+
+.subtitle{
+    @include font(400, 18px);
+    color:#999999;
+    margin-top: 28px;
+}
+
+.search-job{
+    @include nav-parts-header(inherit);
+    height: 96px;
+    background-color: white;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 22px 32px;
+}
+
+.job-title > input{
+    @include input-search(331px);
+    @include font(800, 16px);
+}
+
+.job-place > input{
+    @include input-search(291px);
+    @include font(800, 16px);
+}
+
+.job-distance > select{
+    @include input-search(237px);
+    @include font(800, 16px);
+}
+
+.button-search > input{
+    @include input-search(115px);
+    background-color: #2E1AAD;
+    @extend %font-header;
+    color:white;
+    font-size: 16px;
 }
