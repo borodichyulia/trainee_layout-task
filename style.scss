@@ -28,11 +28,12 @@ $color: white;
     width: 1143px;
 }
 
-@mixin font($weight, $size){
+@mixin font($weight, $size, $lineHeight){
     font-family: Manrope;
     font-style: normal;
     font-weight: $weight;
     font-size: $size;
+    line-height: $lineHeight;
 }
 
 @mixin input-search($width){
@@ -45,6 +46,7 @@ $color: white;
     padding: 15px 16px;
 }
 
+
 %font-header{
     font-family: Manrope;
     font-style: normal;
@@ -55,6 +57,7 @@ $color: white;
 
 body{
     background-color: $color;
+    margin: auto;
 }
 
 header .container{
@@ -143,11 +146,11 @@ nav a{
 }
 
 .title{
-    @include font(800, 48px);
+    @include font(800, 48px, 60px);
 }
 
 .subtitle{
-    @include font(400, 18px);
+    @include font(400, 18px, 30px);
     color:#999999;
     margin-top: 28px;
 }
@@ -165,17 +168,17 @@ nav a{
 
 .job-title > input{
     @include input-search(331px);
-    @include font(800, 16px);
+    @include font(800, 16px, 22px);
 }
 
 .job-place > input{
     @include input-search(291px);
-    @include font(800, 16px);
+    @include font(800, 16px, 22px);
 }
 
 .job-distance > select{
     @include input-search(237px);
-    @include font(800, 16px);
+    @include font(800, 16px, 22px);
 }
 
 .button-search > input{
@@ -184,4 +187,199 @@ nav a{
     @extend %font-header;
     color:white;
     font-size: 16px;
+}
+
+.part-2 .container{
+   @include container(634px);
+   align-items: normal;
+   flex-direction: column;
+}
+
+.main-title{
+    @include font(800, 40px, 56px);
+    margin-top: 112px;
+}
+
+.criterion-title{
+    @include font(700, 18px, 26px);
+    margin-bottom: 8px;
+}
+
+.criterion-text{
+    @include font(400, 16px, 24px);
+    color: #999999;
+    margin-bottom: 30px;
+    width: 220px;
+    height: 48px;
+}
+
+.container-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.criterions{
+    display: inherit;
+    margin-top: 48px;
+}
+
+.first-criterions{
+    margin-right: 32px;
+}
+
+.illustration-image{
+    width: 40%;
+    justify-content: center;
+    display: flex;
+}
+
+.part-3 .container{
+    @include container(805px);
+    align-items: normal;
+}
+
+.employers-criterions{
+    display: flex;
+    flex-direction: column;
+}
+
+.part-3 .main-title{
+    margin-top: 170px;
+}
+
+.part-3 .container-content{
+    width: inherit;
+}
+
+.part-3 .illustration-image{
+    margin-top: 198px;
+}
+
+.part-3 .button-criterion{
+    margin-top: 25px;
+}
+
+.button-criterion{
+    @include header-authorization($background: #2E1AAD, $color: #FFFFFF);
+    @extend %font-header;
+    width: 130px;
+    height: 52px;
+}
+
+.part-4 .container{
+    @include container(687px);
+    align-items: normal;
+    flex-direction: column;
+}
+
+.part-4 .criterion-title{
+    width: 220px;
+}
+
+.part-4 .illustration-image{
+    margin-top: -72px;
+}
+
+.part-4 .main-title{
+    margin-top: 136px;
+}
+
+.part-3 .first-criterions .criterion:nth-child(2), .part-4 .first-criterions .criterion:nth-child(2){
+    margin-top: 51px;
+}
+
+.part-5{
+    background-color: #ECF8FE;
+}
+
+.part-5 .container{
+    @include container(846px);
+    align-items: normal;
+    flex-direction: column;
+}
+
+.part-5 .criterion-text, .part-6 .criterion-text{
+    width: auto;
+    margin-top: 8px;
+}
+
+.client-direction{
+    @include font(800,  20px, 28px);
+    margin-top: 26px;
+}
+
+.client-comment{
+    @include font(400, 16px, 24px);
+    margin-top: 16px;
+}
+
+.client-name{
+    @include font(400, 16px, 24px);
+}
+
+.client-job{
+    @include font(400, 14px, 24px);
+    color: #999999;
+}
+
+.client-information{
+    display: flex;
+    flex-direction: row;
+    margin-top: 95px;
+}
+
+.client-information > div:nth-child(2){
+    margin-left: 12px;
+}
+
+.review{
+    width: 350px;
+    height: 410px;
+    background-color: white;
+    padding: 32px 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.1);
+    border-radius: 8px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.part-6 .container{
+    @include container(538px);
+    flex-direction: column;
+    align-items: normal;
+}
+
+.part-6 .main-title{
+    margin-top: 120px;
+}
+
+.part-6 .achievement .main-title{
+    margin-top: 12px;
+}
+
+.part-6 .achievement .criterion-text{
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+
+.achievement{
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 266px;
+    align-items: center;
+    background: #F5F7FA;
+    border-radius: 16px;
+    padding-top: 44px;
+    box-sizing: border-box;
+}
+
+.part-7 .container{
+    @include container(583px);
+    flex-direction: column;
+    align-items: normal;
 }
