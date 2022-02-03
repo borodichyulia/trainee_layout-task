@@ -465,7 +465,7 @@ nav a:active {
   margin-top: 8px;
 }
 
-.client-direction {
+.client-direction, .part-7 .news-title {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -474,7 +474,7 @@ nav a:active {
   margin-top: 26px;
 }
 
-.client-comment {
+.client-comment, .part-7 .news-description {
   font-family: Manrope;
   font-style: normal;
   font-weight: 400;
@@ -596,7 +596,7 @@ nav a:active {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  height: 583px;
+  height: 595px;
   width: 1143px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -605,5 +605,206 @@ nav a:active {
   -webkit-box-align: normal;
       -ms-flex-align: normal;
           align-items: normal;
+}
+
+.part-7 .cards {
+  margin-top: 56px;
+}
+
+.news-card {
+  width: 350px;
+}
+
+.part-7 .news-title {
+  margin-top: 24px;
+}
+
+.part-7 .news-description {
+  margin-top: 12px;
+  color: #999999;
+}
+
+.part-8 {
+  background-color: #999999;
+}
+
+.part-8 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 134px;
+  width: 1143px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cookies-text {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  width: 524px;
+}
+
+.use-cookies button {
+  width: 112px;
+  height: 40px;
+  background: #231F20;
+  border-radius: 100px;
+  color: white;
+  border: none;
+}
+
+.use-cookies button:hover {
+  cursor: pointer;
+}
+
+.use-cookies {
+  width: 681px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer {
+  background-color: black;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 360px;
+  width: 1143px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-title {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36.57px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.footer-title:hover {
+  cursor: pointer;
+  color: #858ea8;
+}
+
+.footer-item {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #D9DBE1;
+  margin-bottom: 12px;
+}
+
+.footer-item:hover {
+  cursor: pointer;
+  color: #858ea8;
+}
+
+footer .container > div, .footer-content:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container > div {
+  width: 850px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-content:nth-child(2) div:nth-child(1) {
+  margin-right: 30px;
+}
+
+@media (max-width: 1142px) {
+  header .container {
+    width: 769px;
+  }
+  .part-1 .container, .part-2 .container, .part-3 .container, .part-4 .container, .part-5 .container, .part-6 .container, .part-7 .container, .part-8 .container, footer .container {
+    width: 769px;
+  }
+  nav {
+    margin-left: 30px;
+  }
+  .nav-part-first {
+    width: 140px;
+  }
+  .nav-part-second {
+    width: 200px;
+  }
+  .authorization {
+    margin-left: 45px;
+    width: 400px;
+  }
+  .job-title > input {
+    width: 231px;
+  }
+  .job-place > input {
+    width: 191px;
+  }
+  .job-distance > select {
+    width: 137px;
+  }
+  .button-search > input {
+    width: 100px;
+  }
+  .first-screen-man > img {
+    width: 455px;
+    height: 306px;
+  }
+  .first-screen-title .title {
+    font-size: 38px;
+  }
+  .part-2 .illustration-image img {
+    width: 280px;
+    height: 280px;
+  }
+  .part-2 .illustration-image {
+    margin-top: 8%;
+  }
+  .part-2 .first-criterions, .part-3 .first-criterions {
+    margin-right: 15px;
+  }
+  .part-2 .criterion-text, .part-3 .criterion-text {
+    margin-bottom: 15px;
+    line-height: 20px;
+  }
+  .part-3 .illustration-image img {
+    width: 274px;
+    height: 272px;
+  }
+  .part-3 .illustration-image {
+    margin-top: 40%;
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
