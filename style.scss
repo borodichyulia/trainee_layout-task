@@ -29,7 +29,7 @@ $color: white;
 }
 
 @mixin font($weight, $size, $lineHeight){
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: $weight;
     font-size: $size;
@@ -48,7 +48,7 @@ $color: white;
 
 
 %font-header{
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -680,6 +680,10 @@ footer .container > div{
 }
 
 @media (max-width: 768px){
+    header .container > nav, header .authorization{
+        display: none;
+    }
+
     body{
         margin: auto;
     }
@@ -692,10 +696,10 @@ footer .container > div{
         width: 280px;
     }
 
-    nav, .authorization{
+    /*nav, .authorization{
         opacity: 0;
         width: 0px;
-    }
+    }*/
 
 
     #menu__toggle {
@@ -759,7 +763,7 @@ footer .container > div{
         left: -100%;
         flex-direction: column;
         opacity: 1;
-        width: auto;
+        width: 100%;
       
         align-items: center;
         justify-content: center;
@@ -775,9 +779,10 @@ footer .container > div{
     }
     
     .authorization-img{
-        margin-right: 24px;
+        margin-right: 20px;
         opacity: 1;
         width: 20px;
+        margin-left: 95px;
     }
 
     .hamburger-menu{
@@ -788,8 +793,9 @@ footer .container > div{
 
 
     .menu__box > nav{
-        opacity: 1;
+        display: flex;
         width: auto;
+        margin-left: 0px;
     }
 
     .menu__box .nav-part-first, .menu__box .nav-part-second, .menu__box > nav{
@@ -800,6 +806,7 @@ footer .container > div{
         height: 52px;
         vertical-align: center;
         border-bottom: 1px #EBEBEB solid;
+        width: 288px;
         display: flex;
         align-items: center;
         @include font(400, 14px, 16px);
@@ -887,9 +894,7 @@ footer .container > div{
     .part-3 .second-criterions, .part-3 .first-criterions .criterion:nth-child(2), .part-3 .first-criterions .criterion:nth-child(3), .part-3 .first-criterions .criterion:nth-child(4),
     .part-4 .second-criterions, .part-4 .first-criterions .criterion:nth-child(1)
     {
-        opacity: 0;
-        width: 0px;
-        height: 0px;
+        display:none!important;
     }
 
     .part-2 .container-content, .part-4 .container-content{
@@ -1070,6 +1075,14 @@ footer .container > div{
         width: 54px;
     }
 
+    .part-5 .client-direction{
+        @include font(700, 18px, 26px);
+    }
+
+    .part-5 .client-information{
+        margin-top: 60px;
+    }
+
     .part-6 .achievement{
         width: 280px;
         height: 166px;
@@ -1190,4 +1203,9 @@ footer .container > div{
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
+    .part-1 .button-search > input{
+        width: 280px;
+    }
+
 }

@@ -1,5 +1,5 @@
 nav a, .login, .signup, .button-search > input, .button-criterion {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -168,7 +168,7 @@ nav a:active {
 }
 
 .title {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
@@ -176,7 +176,7 @@ nav a:active {
 }
 
 .subtitle {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -213,7 +213,7 @@ nav a:active {
   height: 52px;
   color: #999999;
   padding: 15px 16px;
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -229,7 +229,7 @@ nav a:active {
   height: 52px;
   color: #999999;
   padding: 15px 16px;
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -245,7 +245,7 @@ nav a:active {
   height: 52px;
   color: #999999;
   padding: 15px 16px;
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -287,7 +287,7 @@ nav a:active {
 }
 
 .main-title {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
@@ -296,7 +296,7 @@ nav a:active {
 }
 
 .criterion-title {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -305,7 +305,7 @@ nav a:active {
 }
 
 .criterion-text {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -467,7 +467,7 @@ nav a:active {
 }
 
 .client-direction, .part-7 .news-title {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -476,7 +476,7 @@ nav a:active {
 }
 
 .client-comment, .part-7 .news-description {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -485,7 +485,7 @@ nav a:active {
 }
 
 .client-name {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -493,7 +493,7 @@ nav a:active {
 }
 
 .client-job {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -645,7 +645,7 @@ nav a:active {
 }
 
 .cookies-text {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -700,7 +700,7 @@ footer .container {
 }
 
 .footer-title {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 30px;
@@ -715,7 +715,7 @@ footer .container {
 }
 
 .footer-item {
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -908,6 +908,9 @@ footer .container > div {
 }
 
 @media (max-width: 768px) {
+  header .container > nav, header .authorization {
+    display: none;
+  }
   body {
     margin: auto;
   }
@@ -917,10 +920,10 @@ footer .container > div {
   .part-1 .container, .part-2 .container, .part-3 .container, .part-4 .container, .part-5 .container, .part-6 .container, .part-7 .container, .part-8 .container, footer .container {
     width: 280px;
   }
-  nav, .authorization {
-    opacity: 0;
-    width: 0px;
-  }
+  /*nav, .authorization{
+        opacity: 0;
+        width: 0px;
+    }*/
   #menu__toggle {
     opacity: 0;
   }
@@ -988,7 +991,7 @@ footer .container > div {
         -ms-flex-direction: column;
             flex-direction: column;
     opacity: 1;
-    width: auto;
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1006,9 +1009,10 @@ footer .container > div {
             transition-duration: .25s;
   }
   .authorization-img {
-    margin-right: 24px;
+    margin-right: 20px;
     opacity: 1;
     width: 20px;
+    margin-left: 95px;
   }
   .hamburger-menu {
     width: auto;
@@ -1016,8 +1020,11 @@ footer .container > div {
     display: block;
   }
   .menu__box > nav {
-    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: auto;
+    margin-left: 0px;
   }
   .menu__box .nav-part-first, .menu__box .nav-part-second, .menu__box > nav {
     -webkit-box-orient: vertical;
@@ -1029,13 +1036,14 @@ footer .container > div {
     height: 52px;
     vertical-align: center;
     border-bottom: 1px #EBEBEB solid;
+    width: 288px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1047,7 +1055,7 @@ footer .container > div {
     height: 155px;
   }
   .first-screen-title .title {
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -1056,7 +1064,7 @@ footer .container > div {
     margin-top: 24px;
   }
   .first-screen-title .subtitle {
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1110,7 +1118,7 @@ footer .container > div {
     margin-top: 10px;
   }
   .main-title {
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -1118,7 +1126,7 @@ footer .container > div {
     text-align: center;
   }
   .criterion-title {
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1135,9 +1143,7 @@ footer .container > div {
   .part-2 .first-criterions, .part-2 .second-criterions .criterion:nth-child(1), .part-2 .second-criterions .criterion:nth-child(2), .part-2 .second-criterions .criterion:nth-child(4),
   .part-3 .second-criterions, .part-3 .first-criterions .criterion:nth-child(2), .part-3 .first-criterions .criterion:nth-child(3), .part-3 .first-criterions .criterion:nth-child(4),
   .part-4 .second-criterions, .part-4 .first-criterions .criterion:nth-child(1) {
-    opacity: 0;
-    width: 0px;
-    height: 0px;
+    display: none !important;
   }
   .part-2 .container-content, .part-4 .container-content {
     -webkit-box-orient: vertical;
@@ -1312,6 +1318,16 @@ footer .container > div {
     margin-left: 113px;
     width: 54px;
   }
+  .part-5 .client-direction, .part-5 .part-7 .news-title, .part-7 .part-5 .news-title {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .part-5 .client-information {
+    margin-top: 60px;
+  }
   .part-6 .achievement {
     width: 280px;
     height: 166px;
@@ -1387,7 +1403,7 @@ footer .container > div {
     padding-bottom: 20px;
   }
   .footer-title {
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -1395,7 +1411,7 @@ footer .container > div {
     text-align: center;
   }
   .footer-item {
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1422,6 +1438,9 @@ footer .container > div {
   footer .container {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .part-1 .button-search > input {
+    width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
